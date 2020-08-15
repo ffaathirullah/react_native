@@ -1,9 +1,11 @@
+import Home from './HomeComponent';
 import React, { Component } from 'react';
 import Menu from './MenuComponent';
 import Dishdetail from './DishdetailComponent';
 import { View, Platform } from 'react-native';
-import { createStackNavigator} from 'react-navigation-stack'
+import { createStackNavigator} from 'react-navigation-stack';
 import { createAppContainer } from "react-navigation";
+
 
 
 const MenuNavigator = createStackNavigator({
@@ -23,6 +25,8 @@ const MenuNavigator = createStackNavigator({
         }
     }
 );
+
+
 
 const AppContainer = createAppContainer(MenuNavigator);
 
